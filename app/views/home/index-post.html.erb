@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lusi</title>
+	<link rel="shortcut icon" type="image/x-icon" href="starfav.ico"/>
+
+	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300' rel='stylesheet' type='text/css'>
+	
+</head>
+<body class="body-index">
+	<div id="nav">
+		<i class="fa fa-bars"></i>
+		<ul>	
+		<div id="nav-wrap">
+			<li class="nav-link about-link"><a href=".about">about</a></li>
+			<li class="nav-link contact-link"><a href=".contact">contact</a></li>
+			<li class="nav-link gallery-link"><a href=".gallery">gallery</a></li>
+		</div>
+		</ul>
+	</div>
+
+
+	<section class="header">
+		<div>
+			<h1 class="hello">hello.</h1>
+		</div>	
+		<div class="tagline">welcome to lusi's site</div>
+		
+		<div class="star-wrap">
+			<p class="pstar">follow the star by scrolling down</p>
+			<i class="fa fa-star fa-star1"></i>
+		</div>
+		
+	</section>
+
+	<section class="about">
+		<div class="about-trigger">about trigger</div>
+		<div class="about-box" id="animate1">
+			<div class="a-border">
+				<h2 id="a-head">about lusi xiao</h2>
+				<p id="a-p1">Lusi currently a tax consultant for PricewaterhouseCoopers. She graduated with her Masters in Professional Accounting in 2013 from The University of Texas in Austin. She also went to UT Austin for her undergrad from 2008-2012 and recieved her BBA in Accounting and BA in Economics there.</p>
+				<p id="a-p2">Outside of her professional life, Lusi is an avid traveler who is always looking for an adventure. When she is not traveling, she loves to go out and have a good time! She is a huge Star Trek fan and her favorite show is the Big Bang Theory.
+				</p>
+			</div>
+		</div>
+		<div class="about-trigger-end">atrigger end</div>
+		<i class="fa fa-star fa-rotate-90 fa-2x s1"></i>
+		<i class="fa fa-star fa-rotate-180 fa-2x s2"></i>
+		<i class="fa fa-star fa-rotate-270 s3"></i>
+		<i class="fa fa-star fa-rotate-90 s4"></i>
+		<i class="fa fa-star fa-rotate-180 s5"></i>
+		<i class="fa fa-star fa-rotate-270 s6"></i>
+	</section>
+
+	<section class="contact">
+		<div class="contact-trigger">contact trigger</div>
+		<div class="contact-box" id="animate2">
+			<div class="c-border">
+				<h2 id="c-head">contact me</h2>
+				<p id="c-p">find me on facebook or linkedin</p><br>
+				<a href="https://www.facebook.com/elexchow"><img src="http://international.olemiss.edu/wp-content/uploads/sites/23/2014/01/facebook-logo-transparent.png">
+				</a>
+				<a href="https://www.linkedin.com/pub/lusi-xiao-cpa/2b/1a/7a8"><img src="http://www.vekoldmc.com/images/logos/lin.png">
+				</a>
+				<div class="thanks-email">	
+					<p>Thanks, <%= params["name"]%>, I will email you at <%=params["address"]%></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contact-trigger-end">ctrigger end</div>	
+		<div class="gallery-pre"></div>
+	</section>
+
+	<section class="gallery">
+		<div class="gallery-trigger">gallery trigger</div>
+		<div class="gallery-box" id="animate3">
+			<div class="g-border">
+				<h2 id="g-head">gallery</h2>
+				<div id="g-p">
+					<a href="lusi1.JPG" data-lightbox="gallery" data-title=""><img src="lusi1.JPG"/></a>
+					<a href="austin1.jpg" data-lightbox="gallery" data-title="my favorite city in the world: austin, tx"><img src="austin1.jpg"/></a>
+					<a href="austin2.jpg" data-lightbox="gallery" data-title="another great picture of austin"><img src="austin2.jpg"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-trigger-end">gtrigger end</div>
+	</section>
+	<div class="break"></div>
+
+	<script src="lightbox.js"></script>
+</body>
+</html>
